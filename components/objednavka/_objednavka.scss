@@ -1,0 +1,41 @@
+.objednavka__Con {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .objednavka__Col__Text {
+    height: 50vh;
+    background: white;
+    h1 {
+      color: $purple;
+      font-size: 7vw;
+      padding: 0rem 1rem;
+    }
+  }
+  .objednavka__Col {
+    height: 70vh;
+    .box {
+      height: max-content;
+      padding: 2rem 0.5rem;
+      h2 {
+        color: $purpleD;
+        font-weight: 700;
+        @media (max-width: 780px) {
+          padding: 0rem 0.5rem;
+        }
+      }
+      p {
+        color: $purple;
+        @media (max-width: 780px) {
+          padding: 0rem 0.5rem;
+          letter-spacing: 1px;
+        }
+      }
+      .btn__Katalog {
+        background: $purple;
+        border-radius: 6.4vw;
+        word-wrap: break-word;
+        color: white;
+        z-index: 2;
+      }
+    }
+  }
+}

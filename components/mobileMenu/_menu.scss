@@ -1,0 +1,62 @@
+.menu__Wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  z-index: 1000;
+  display: none;
+  .slider {
+    height: 100vh;
+    width: 100vw;
+    background: $bg__Img;
+    position: absolute;
+    .box {
+      ul {
+        li {
+          line-height: 5rem;
+          a {
+            font-size: 3rem;
+            color: white;
+            &:hover {
+              color: rgb(228, 228, 228);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#btn-hamburger {
+  // use position property to custom in your layout
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  padding: 0.6em;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10000;
+  background: transparent;
+  cursor: pointer;
+  .line-1,
+  .line-2,
+  .line-3 {
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.5s ease-in-out;
+  }
+  &.animeOpenClose .line-1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+  &.animeOpenClose .line-2 {
+    opacity: 0;
+  }
+  &.animeOpenClose .line-3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+}

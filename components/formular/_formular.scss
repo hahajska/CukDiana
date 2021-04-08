@@ -1,0 +1,114 @@
+.formular__Col {
+  position: relative;
+  height: 100vh;
+
+  h1 {
+    color: $purple;
+    padding: 0rem 1rem;
+    z-index: 5;
+  }
+  form {
+    z-index: 5;
+
+    input {
+      width: 590px;
+      margin: 1rem 0rem;
+      background: none;
+      border: none;
+      border-bottom: 3px solid $purpleD;
+      outline-style: none;
+      height: 3rem;
+      color: $purpleD;
+
+      @media (max-width: 1379px) {
+        width: 370px;
+      }
+      @media (max-width: 992px) {
+        width: 355px;
+      }
+      @media (max-width: 578px) {
+        width: 320px;
+      }
+    }
+    textarea {
+      width: 590px;
+      border: 1px solid red;
+      margin: 1.25rem 0rem;
+      background: none;
+      border: none;
+      border-bottom: 3px solid $purple;
+      outline-style: none;
+      height: 7.5rem;
+      color: $purpleD;
+
+      @media (max-width: 1379px) {
+        width: 375px;
+      }
+      @media (max-width: 992px) {
+        width: 355px;
+      }
+      @media (max-width: 578px) {
+        width: 320px;
+      }
+    }
+    ::placeholder {
+      padding-left: 5px;
+      padding-top: 0.1px;
+      color: rgb(27, 27, 27);
+      font-size: 1.25rem;
+      @media (max-width: 768px) {
+        font-size: 0.95rem;
+      }
+    }
+  }
+  .btn__Vice {
+    background: $purple;
+    border-radius: 6.4vw;
+    word-wrap: break-word;
+    color: white;
+    font-weight: 700;
+    z-index: 2;
+    font-size: 0.8rem;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  .plakat1 {
+    position: absolute;
+    height: 50rem;
+    width: 17rem;
+    object-fit: cover;
+    top: 50%;
+    left: 15%;
+    z-index: 5;
+
+    transform: translate(-50%, -50%);
+    @media (max-width: 1000px) {
+      display: none;
+      border-radius: 25px;
+    }
+    @media (max-width: 1125px) {
+      left: 13%;
+      width: 15rem;
+    }
+  }
+  .plakat2 {
+    position: absolute;
+    height: 50rem;
+    width: 17rem;
+    object-fit: cover;
+    top: 50%;
+    right: 15%;
+    z-index: 5;
+    transform: translate(50%, -50%);
+    @media (max-width: 1000px) {
+      display: none;
+    }
+    @media (max-width: 1125px) {
+      right: 13%;
+      width: 15rem;
+    }
+  }
+}

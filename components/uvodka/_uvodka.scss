@@ -1,0 +1,87 @@
+.uvodka__Con {
+  height: 100vh;
+  background-color: #332546;
+  background-image: url("../../images/tort.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .row {
+    .uvodka1__Col {
+      height: 50vh;
+    }
+    .uvodka2__Col {
+      height: 50vh;
+      h1 {
+        font-size: 8.5vw;
+        font-family: "Playfair Display SC", serif;
+        letter-spacing: -5px;
+        margin-bottom: -2vw;
+        @media (max-width: 900px) {
+          letter-spacing: -1px;
+        }
+        @media (max-width: 600px) {
+          letter-spacing: 0.5px;
+        }
+      }
+      h2 {
+        font-size: 10vw;
+        font-family: "Playfair Display SC", serif;
+        letter-spacing: -5px;
+        @media (max-width: 600px) {
+          letter-spacing: 0.9px;
+        }
+      }
+    }
+  }
+}
+.menu__Icons {
+  z-index: 101;
+  position: fixed;
+  top: 6.5rem;
+  right: 2.5rem;
+  font-size: 0.75rem;
+  @media (max-width: 900px) {
+    top: 4rem;
+    right: 2rem;
+    font-size: 0.7rem;
+  }
+}
+li {
+  display: inline-block;
+  color: white;
+
+  a {
+    padding: 0rem 0.5rem;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: white;
+  }
+}
+
+.social__Icons {
+  z-index: 101;
+  position: fixed;
+  top: 6.5rem;
+  left: 2.5rem;
+  font-size: 0.75rem;
+  @media (max-width: 900px) {
+    top: 4rem;
+    left: 2rem;
+    font-size: 0.7rem;
+  }
+  @media (max-width: 690px) {
+    top: 4rem;
+    left: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  li {
+    display: inline-block;
+    a {
+      padding: 0rem 1rem;
+      color: white;
+      font-size: 0.8rem;
+    }
+  }
+}
